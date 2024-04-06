@@ -1,0 +1,324 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("image/CORDY_WM.jpg");
+  min-height: 100%;
+}
+ 
+.w3-bar .w3-button {
+  padding: 16px;
+}
+.w3-display-left, .w3-display-bottomleft {
+  padding: 48px;
+}
+.w3-display-bottomleft {
+  padding: 24px 48px;
+}
+.w3-container, .w3-row-padding {
+  padding: 128px 16px;
+}
+.w3-row-padding {
+  margin-top: 64px;
+}
+.w3-container.w3-light-grey, .w3-container.w3-center.w3-dark-grey, .w3-container.w3-light-grey {
+  padding: 128px 16px;
+}
+.w3-row-padding, .w3-row-padding.w3-section, .w3-container.w3-row.w3-center.w3-dark-grey.w3-padding-64, .w3-container.w3-light-grey.w3-padding-64 {
+  padding: 64px 0;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+
+.background-image {
+  background-image: url('image/PINK_WM.jpg');
+  background-size:auto;
+  background-position: center;
+  background-repeat:inherit;
+  position: relative;
+  z-index: 0;
+}
+
+/* Add padding to the container to ensure the image can be seen */
+#design {
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+/* Add or override in your CSS file */
+
+#design {
+  padding: 150px 16px; /* Increase the top and bottom padding to increase height */
+  border: 30px solid lightgrey;
+}
+
+/* Adjustments to the .w3-row-padding within #design if needed */
+#design .w3-row-padding {
+  padding-top: 50px; /* or any other value you prefer */
+  padding-bottom: 50px; /* or any other value you prefer */
+}
+
+
+/* Overlay style */
+.text-overlay {
+  background-color: rgba(0, 0, 0, 0.192);/* Semi-transparent black background */
+  color: #ffffff; /* White text for better contrast */
+  padding: 20px; /* Padding to ensure text doesn't touch the edges */
+  border-radius: 35px; /* Optional: Rounds the corners of the overlay box */
+  margin-top: 20px; /* Adjusts spacing from the top of the container */
+}
+
+/* Text shadow for headlines */
+.background-image h2, .background-image h4 {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+}
+
+/*SWIPER START*/
+
+.swiper-button-prev, .swiper-button-next {
+  z-index: 10; /* Ensure they are above the slides */
+}
+/* SWIPER BASE STYLES */
+.swiper-container {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  padding: 0;
+  margin: 0 auto; /* Center the container */
+}
+
+/* SWIPER NAVIGATION BUTTONS */
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  font-size: 24px; /* Adjust font size as needed */
+  position: absolute;
+  top: 50%; /* Position vertically at the middle */
+  transform: translateY(-50%); /* Center vertically */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+  border-radius: 50%; /* Make buttons circular */
+  width: 40px; /* Set button width */
+  height: 40px; /* Set button height */
+  text-align: center; /* Center text horizontally */
+  line-height: 40px; /* Center text vertically */
+  cursor: pointer; /* Add cursor pointer */
+  z-index: 10; /* Ensure buttons are above the slides */
+}
+
+/* SWIPER PAGINATION */
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: 0;
+  right: 0;
+  text-align: center; /* Center the pagination dots */
+  z-index: 10;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff; /* Make active bullet more visible */
+}
+
+/* SWIPER SLIDE CUSTOMIZATION */
+.swiper-slide-custom {
+  background-color: rgba(211, 211, 211, 0.671);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+/* MUSHROOM CARD STYLES */
+.mushroom-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 300px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.mushroom-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 25%, rgba(0,0,0,0.4) 65%);
+  border-radius: 15px;
+}
+
+/* TEXT STYLES WITHIN CARDS */
+.mushroom-card h2,
+.mushroom-card p,
+.mushroom-card .mushroom-price {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 4px rgba(10, 10, 10, 0.5);
+}
+
+.mushroom-card h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.mushroom-card p {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.mushroom-card .mushroom-price {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+/* BUTTON AND INPUT STYLES */
+/* .quantity-selector input[type="number"], */
+.add-to-cart-button {
+  border-radius: 20px;
+  transition: box-shadow 0.2s ease, background-color 0.3s ease;
+  z-index: 2;
+}
+
+.quantity-selector input[type="number"]:hover,
+.add-to-cart-button:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+.quantity-selector {
+  position: relative;
+  z-index: 3; /* Ensure it's above the pseudo-element */
+}
+
+.quantity-selector input[type="number"] {
+  /* -webkit-appearance: none; For iOS */
+  margin: 0; /* Remove default margin */
+  max-width: 60px; /* You can adjust this width */
+  padding: 5px 10px; /* Add some padding */
+  border: 1px solid #ccc; /* A subtle border */
+  border-radius: 4px; /* Rounded corners */
+  background: white; /* Ensure background is white */
+  cursor: text; /* Text cursor on hover */
+  pointer-events: auto; /* Ensure it's selectable */
+  margin-bottom: 4px;
+}
+
+/* Adjust the appearance of the input on focus */
+.quantity-selector input[type="number"]:focus {
+  outline: none; /* Removes the default outline */
+  border-color: #333; /* Darker border for visibility */
+  box-shadow: 0 0 0 2px rgba(51, 51, 51, 0.2); /* Adds a subtle glow */
+}
+
+
+.add-to-cart-button {
+  background-color: #333;
+  color: white;
+  padding: 10px 24px;
+  border: 1px solid transparent;
+  margin-top: 5px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #555;
+  border-color: #777;
+}
+
+/* CARD HOVER EFFECT */
+.mushroom-card:hover {
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+/* BACKGROUND IMAGES FOR INDIVIDUAL CARDS */
+#cordyceps-card {
+  background-image: url('image/CODYCard.jpg');
+}
+
+#BlackMorel-card {
+  background-image: url('image/BM_edited.jpg');
+}
+#YellowMorel-card {
+  background-image: url('image/YellowMorelAdobe.jpeg');
+}
+#Hedgehog-card {
+  background-image: url('image/Hedgehog.jpg');
+}
+#BTrumpet-card {
+  background-image: url('image/BlackTrumpet_Adobe.jpeg');
+}
+#Maitake-card {
+  background-image: url('image/Maitake.jpeg');
+}
+#Chestnut-card {
+  background-image: url('image/Chestnut.png');
+}
+#Poplar-card {
+  background-image: url('image/Poplar_Adobe.jpeg');
+}
+#Chicken-card {
+  background-image: url('image/Chicken_Adobe.jpeg');
+}
+#Turkey-card {
+  background-image: url('image/Turkey_unsplash.jpg');
+}
+#King-card {
+  background-image: url('image/King_Adobe.jpeg');
+}
+#Lion-card {
+  background-image: url('image/Lion2.jpg');
+}
+#Pink-card {
+  background-image: url('image/PINK_WM2.jpg');
+}
+#Shiitake-card {
+  background-image: url('image/Shiitake1.jpg');
+}
+#Reishi-card {
+  background-image: url('image/Reishi1.png');
+}
+#BBeech-card {
+  background-image: url('image/BrownBeech_Adobe.jpeg');
+}
+#WBeech-card {
+  background-image: url('image/WBeech.jpeg');
+}
+#Gold-card {
+  background-image: url('image/Golden_Adobe.jpeg');
+}
+#Blue-card {
+  background-image: url('image/Boyster_Adobe.jpeg');
+}
+
+/* ... Add other cards with their respective background images ... */
