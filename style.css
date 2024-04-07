@@ -9,6 +9,29 @@ body, html {
   background-image: url("image/CORDY_WM.jpg");
   min-height: 100%;
 }
+.spacer {
+  height: 30px; /* Or whatever height you want the space to be */
+}
+.dark-grey-separator {
+  height: 60px; /* Height of the separator */
+  background-color: rgba(211, 211, 211, 0.671); /* Dark grey color */
+  margin-top: 0em; /* Space above the separator */
+  margin-bottom: 0em; /* Space below the separator */
+}
+
+
+
+.instagram-link {
+  text-decoration: none; /* Removes the underline */
+}
+
+.instagram-link:hover {
+  text-decoration: none; /* Ensures the underline doesn't appear on hover */
+}
+/* Add left padding to the entire R&D Projects column */
+.w3-col {
+  padding-left: 2em; /* Adjust the value as needed */
+}
  
 .w3-bar .w3-button {
   padding: 16px;
@@ -322,3 +345,4 @@ body, html {
 }
 
 /* ... Add other cards with their respective background images ... */
+
